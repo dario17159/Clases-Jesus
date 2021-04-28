@@ -5,7 +5,7 @@ document.addEventListener('deviceready', onDeviceReady, false);
 function onDeviceReady() {
     /* document.getElementById('deviceready').classList.add('ready'); */
     console.log('Cordova Listo!');
-    document.getElementById('button1').addEventListener("click", onButtonClicked);
+    document.getElementById('button_enviar').addEventListener("click", onButtonEnviarClicked);
 }
 
 var onSuccess = function(position){
@@ -27,6 +27,8 @@ var onError = function(error){
 }
 
 
-function onButtonClicked(){
-    navigator.geolocation.getCurrentPosition(onSuccess, onError);
+function onButtonEnviarClicked(){
+    // navigator.geolocation.getCurrentPosition(onSuccess, onError);
+    console.log('Boton enviar clickeado');
+    location.href ="/index2.html";
 }
