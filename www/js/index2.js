@@ -61,15 +61,15 @@ function getHorDateAndLocationData() {
 }
 
 var onSuccess = function (position) {
-    console.log('Hubicacion obtenida');
-    console.log(position.coords);
+    /* console.log('Hubicacion obtenida');
+    console.log(position.coords); */
 
     hourInput.style.display = "";
     dateInput.style.display = "";
     locationData.style.display = "";
 
     const date = new Date()
-    console.log(date.toLocaleDateString());
+    // console.log(date.toLocaleDateString());
 
     if (!isInput) {
         btnInput.style.display = "";
